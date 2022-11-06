@@ -6,6 +6,7 @@ import Underline from "./Underline";
 
 export default function Project({
   title,
+  brokenTitle,
   img,
   subtitle,
   description,
@@ -24,7 +25,18 @@ export default function Project({
   return (
     <div className="lg:pl-20">
       <Line classes="pl-8 lg:pl-0" />
-      <HeadingText subheading text={title} idx={idx} />
+      {!brokenTitle ? (
+        <HeadingText subheading text={title} idx={idx} />
+      ) : (
+        <>
+          <div className="block sm:hidden">
+            <HeadingText subheading text={brokenTitle} idx={idx} />
+          </div>
+          <div className="hidden sm:block">
+            <HeadingText subheading text={title} idx={idx} />
+          </div>
+        </>
+      )}
       <div className="flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 pb-4 lg:pb-0 lg:pr-10">
           <img

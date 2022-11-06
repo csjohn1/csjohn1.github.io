@@ -8,6 +8,7 @@ export default function Portfolio() {
   const projects = [
     {
       title: "↳ Climate Change Podcasting",
+      brokenTitle: "↳ Climate Change\nPodcasting",
       img: "spot",
       subtitle:
         "Climate Education Credits - Built for New Relic x DEV's “Hack the Planet” Hackathon",
