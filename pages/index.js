@@ -9,7 +9,11 @@ export default function Home() {
     <>
       <Head>
         <title>Chris John - Fullstack Developer</title>
-        <meta name="description" content="Fullstack Developer" />
+        <meta property="og:title" content="Chris John | Fullstack Developer" />
+        <meta name="description" content="I can make websites." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://cxjohn.me/" />
+        <meta property="og:image" content="/images/rainbow.jpeg" />
       </Head>
       <div className="text-charcoal">
         <NavBar />
